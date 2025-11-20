@@ -973,7 +973,7 @@ class Parser {
           return; // continue
         }
 
-        const pathPrefix = keys.splice(0, index).join(keySeparator);
+        const pathPrefix = keys.slice(0, index).join(keySeparator);
 
         // Context & Plural
         // http://i18next.com/translate/context/
